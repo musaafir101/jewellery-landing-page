@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "NowThin"; /* 100 */
+  src: url("../fonts/now/Now-Thin.otf");
+  src: url("../fonts/now/Now-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "NowLight"; /* 300 */
+  src: url("../fonts/now/Now-Light.otf");
+  src: url("../fonts/now/Now-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "NowRegular"; /* 500 */
+  src: url("../fonts/now/Now-Regular.otf");
+  src: url("../fonts/now/Now-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "NowMedium"; /* 700 */
+  src: url("../fonts/now/Now-Medium.otf");
+  src: url("../fonts/now/Now-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "NowBold"; /* 900 */
+  src: url("../fonts/now/Now-Bold.otf");
+  src: url("../fonts/now/Now-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "NowBlack"; /* 1100 */
+  src: url("../fonts/now/Now-Black.otf");
+  src: url("../fonts/now/Now-Black.otf") format("opentype");
+}
+
+:root {
+  --100: "NowThin";
+  --400: "NowLight";
+  --500: "NowRegular";
+  --600: "NowMedium";
+  --700: "NowBold";
+  --800: "NowBlack";
+  --theme-color: #e2d2c5;
+  --red-color: #ea394b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.font-0 {
+  font-family: var(--100) !important;
+}
+.font-1 {
+  font-family: var(--400) !important;
+}
+.font-2 {
+  font-family: var(--500) !important;
+}
+.font-3 {
+  font-family: var(--600) !important;
+}
+.font-4 {
+  font-family: var(--700) !important;
+}
+.font-5 {
+  font-family: var(--800) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: var(--700);
+}
+h5 {
+  font-family: var(--600);
+}
+.seperator {
+  border: 2px solid #ffafd3;
+  width: 129px;
+  height: 0px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.seperator.center {
+  margin: 15px auto;
+}
+.text-center-75 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+section {
+  padding: 25px 0;
+}
+section.supplier {
+  padding: 62px 0;
+}
+.h2-main {
+  margin-bottom: 23px;
+}
+.sub-head-1.text-center {
+  margin-bottom: 23px;
+}
+.h2-main.center {
+  text-align: center;
+}
+
+/* =========== dropshipping section =========== */
+section.dropshipping {
+  padding: 57px 0;
+  background-color: #fff;
+  background: url(../images/Slicing/bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-hor {
+  background: rgba(255, 255, 255, 0.56);
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  padding: 21px 16px;
+  margin-bottom: 30px;
+  height: 113px;
+}
+.card-inner {
+  display: flex;
+  align-items: center;
+}
+.card-inner .counter {
+  width: 46.57px;
+  height: 46.57px;
+  background: #ffafd3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 100%;
+  margin-right: 18px;
+}
+.text {
+  width: 200px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+}
+/* =========== dropshipping section =========== */
+/* =========== work section =========== */
+.card-ver {
+  border: 1.5px solid rgba(62, 62, 62, 0.05);
+  filter: drop-shadow(0px 10px 30px rgba(196, 196, 239, 0.2));
+  border-radius: 14px;
+  padding: 18px 12px;
+  margin-bottom: 22px;
+}
+.icon-wrapper {
+  width: 45px;
+}
+.icon-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 175, 211, 0.55) 0%,
+    rgba(255, 239, 246, 0) 89.08%,
+    rgba(255, 239, 246, 0.55) 89.08%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 54px;
+}
+.text-content {
+  font-weight: 500;
+  font-size: 10.5px;
+  line-height: 18px;
+}
+/* =========== work section =========== */
+
+/* =========== customer section =========== */
+.accordion-button::after {
+  background-image: url(../images/Slicing/plus.png);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/Slicing/minus.png);
+}
+.accordion-item:first-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.accordion-button {
+  background: #fff;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+}
+.accordion-collapse .card-body {
+  padding: 0 20px;
+}
+.accordion-item {
+  border: 0;
+  border-bottom: 1px solid #666666cc;
+}
+.btn.btn-theme {
+  background: #ffafd3;
+  border-radius: 6px;
+  display: flex;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 29px;
+}
+.icon-btn {
+  width: 11px;
+  height: 18px;
+  margin-left: 10px;
+}
+div#myAccordion {
+  margin-bottom: 28px;
+}
+/* =========== customer section =========== */
+
+/*
+.text-center-75 {
+  width: 75%;
+}
+*/
