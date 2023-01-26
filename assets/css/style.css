@@ -579,6 +579,9 @@ section.register {
     display: flex;
     align-items: center;
   }
+  .card-slider {
+    box-shadow: none;
+  }
   .theme-warpper {
     width: 60%;
   }
@@ -637,6 +640,27 @@ section.register {
   }
   .sub-head-1.text-center {
     margin-bottom: 35px;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 17.5px;
+    line-height: 29px;
+    width: 220px;
+  }
+  .card-hor {
+    height: 135px;
+    display: flex;
+    align-items: center;
+  }
+  .card-inner .counter {
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .icon-theme-ul h5 {
+    font-size: 16px;
   }
 }
 /* =========== large devices =========== */
