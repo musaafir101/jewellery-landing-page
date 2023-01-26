@@ -85,10 +85,17 @@ h6 {
 h5 {
   font-family: var(--600);
 }
+.sm-none {
+  display: none !important;
+}
+.col-reverse {
+  flex-direction: column-reverse;
+}
 .seperator {
   border: 2px solid #ffafd3;
-  width: 129px;
+  width: 89px;
   height: 0px;
+  margin: 0 auto;
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -107,7 +114,12 @@ section.supplier {
   padding: 62px 0;
 }
 .h2-main {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 41px;
   margin-bottom: 23px;
+  text-align: center;
 }
 .sub-head-1.text-center {
   margin-bottom: 23px;
@@ -115,12 +127,30 @@ section.supplier {
 .h2-main.center {
   text-align: center;
 }
+.text-1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+div#myAccordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  padding-left: 0;
+}
+div#myAccordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button:not(.collapsed) {
+  padding-left: 0;
+}
 
 /* =========== dropshipping section =========== */
 section.dropshipping {
   padding: 57px 0;
   background-color: #fff;
-  background: url(../images/Slicing/bg.png) no-repeat;
+  background: url(../images/Slicing/box-bg.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -155,6 +185,21 @@ section.dropshipping {
   font-size: 13px;
   line-height: 21px;
 }
+.swiperCardHor .swiper-slide {
+  width: 80%;
+}
+.swiperCardHor .swiper-wrapper {
+  margin-bottom: 33px;
+}
+.swiperCardHor .swiper-pagination span.swiper-pagination-bullet {
+  width: 32.11px;
+  height: 4px;
+  border-radius: 60px;
+  background: #ffafd3;
+}
+.swiperCardHor span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ffafd3;
+}
 /* =========== dropshipping section =========== */
 /* =========== work section =========== */
 .card-ver {
@@ -163,6 +208,16 @@ section.dropshipping {
   border-radius: 14px;
   padding: 18px 12px;
   margin-bottom: 22px;
+  transition: 0.3s all;
+}
+.card-ver:hover {
+  box-shadow: 10px -2px 29px 5px rgba(238, 77, 71, 0.07);
+}
+.card-ver:hover .counter-wrapper {
+  color: #ffafd3;
+  background: transparent;
+  -webkit-text-fill-color: #ffafd3;
+  -webkit-text-fill-color: #ffafd3;
 }
 .icon-wrapper {
   width: 45px;
@@ -190,6 +245,11 @@ section.dropshipping {
   font-weight: 500;
   font-size: 10.5px;
   line-height: 18px;
+}
+.img-circle {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 30px;
 }
 /* =========== work section =========== */
 
@@ -223,8 +283,13 @@ section.dropshipping {
   font-size: 17px;
   line-height: 30px;
 }
+.accordion-header button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+}
 .accordion-collapse .card-body {
-  padding: 0 20px;
+  padding: 0 20px 0 0px;
 }
 .accordion-item {
   border: 0;
@@ -248,8 +313,330 @@ div#myAccordion {
 }
 /* =========== customer section =========== */
 
+/* =========== theme section =========== */
+section.theme {
+  padding: 82px 0;
+  background-color: #fff;
+  background: url(../images/Slicing/theme-bg-mob.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.theme-warpper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.text-theme {
+  width: 131px;
+}
+.text-theme .h2-main {
+  margin: 0;
+  margin-bottom: 23px;
+  text-align: left;
+}
+.icon-theme-ul {
+  width: 85px;
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+.theme-text-ul ul li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  margin-bottom: 22px;
+}
+.icon-theme-ul.dark {
+  background: #fffc;
+}
+.icon-theme-ul.light {
+  background: hsl(0deg 3% 81% / 10%);
+}
+.icon-theme-ul h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0f0f0f;
+  margin-bottom: 20px;
+}
+.icon-theme-ul.dark h5 span {
+  color: #ffafd3;
+}
+.ul-icon {
+  width: 40px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+.icon-theme-ul ul li {
+  margin-bottom: 43px;
+}
+/* =========== theme section =========== */
+
+/* =========== customer section =========== */
+.card-slider {
+  text-align: center;
+}
+.card-slider article.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+}
+.sub-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.slider-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+}
+.card-slider {
+  background: #ffffff;
+  text-align: center;
+  padding: 30px 30px;
+  border-radius: 20px;
+  transition: 0.3 ease-in-out;
+  box-shadow: -10px 20px 39px 10px rgba(238, 77, 71, 0.07);
+}
+.card-slider:hover {
+  box-shadow: -10px 20px 39px 10px rgba(238, 77, 71, 0.07);
+}
+.customer-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 40px;
+}
+.mySwiper {
+  padding: 20px 20px 100px 20px;
+}
+/* .mySwiper .swiper-slide {
+  width: 100% !important;
+} */
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  top: calc(100% - 20px);
+  left: calc(50% - 50px);
+  width: 37px;
+  height: 37px;
+  background: #ffafd3;
+  border-radius: 100%;
+  color: #000;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  top: calc(100% - 20px);
+  right: calc(50% - 50px);
+  width: 37px;
+  height: 37px;
+  background: #ffafd3;
+  border-radius: 100%;
+  color: #000;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  font-size: 11px;
+  font-weight: bold;
+}
+.slider-separator {
+  width: 66px;
+  height: 4px;
+  background: #ffafd3;
+  margin: 15px auto;
+}
+/* =========== customer section =========== */
+
+/* =========== register section =========== */
+section.register {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 42px 0;
+}
+.f-center {
+  margin: 0 auto;
+}
+/* =========== register section =========== */
+
 /*
 .text-center-75 {
   width: 75%;
 }
 */
+
+/* ===================================== */
+/* =========== Media Queries =========== */
+/* ===================================== */
+
+/* =========== small devices =========== */
+@media screen and (min-width: 768px) {
+  .text-theme {
+    width: 320px;
+  }
+  .icon-theme-ul {
+    width: 120px;
+  }
+  .ul-icon {
+    width: 40px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+  .icon-theme-ul ul li {
+    margin-bottom: 22px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    left: calc(50% - 80px);
+    top: calc(100% - 40px);
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+    right: calc(50% - 80px);
+    top: calc(100% - 40px);
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 20px;
+  }
+}
+/* =========== small devices =========== */
+
+/* =========== medium devices =========== */
+@media screen and (min-width: 992px) {
+  .col-reverse {
+    flex-direction: revert;
+    align-items: center;
+  }
+  .theme-warpper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .dm-none {
+    display: none;
+  }
+  .sm-none {
+    display: flex !important;
+  }
+  .work .h2-main {
+    text-align: left;
+    width: 100%;
+  }
+  .seperator {
+    margin-left: 0;
+  }
+  .h2-main.center {
+    text-align: center;
+  }
+  .text-content {
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 18px;
+  }
+}
+/* =========== medium devices =========== */
+
+/* =========== large devices =========== */
+@media screen and (min-width: 1100px) {
+  .h2-main {
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 54px;
+  }
+  section.dropshipping {
+    padding: 57px 0;
+    background-color: #fff;
+    background: url(../images/Slicing/Bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    display: flex;
+    align-items: center;
+  }
+  section.theme {
+    padding: 82px 0;
+    background-color: #fff;
+    background: url(../images/Slicing/l-bg-croped_50.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 816px;
+    display: flex;
+    align-items: center;
+  }
+  .theme-warpper {
+    width: 60%;
+  }
+  .theme-text-ul ul li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .text-theme {
+    width: 320px;
+  }
+  .icon-theme-ul {
+    width: 171px;
+  }
+  .ul-icon {
+    width: 70px;
+  }
+  section.register .h2-main {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+  }
+  .seperator.center {
+    margin: 18px auto 25px auto;
+  }
+  .seperator {
+    width: 129px;
+    margin-bottom: 18px;
+    margin-top: 25px;
+  }
+  section.customer {
+    padding: 68px 0;
+  }
+  section.register {
+    padding: 56px 0;
+  }
+  .card-ver {
+    filter: none;
+    border-radius: 14px;
+    padding: 18px 35px;
+    height: 290px;
+  }
+  .text-content {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .counter-wrapper {
+    font-size: 90px;
+  }
+  .icon-wrapper {
+    width: 70px;
+  }
+  .mb-text-1 {
+    margin-bottom: 61px;
+  }
+  .sub-head-1.text-center {
+    margin-bottom: 35px;
+  }
+}
+/* =========== large devices =========== */
